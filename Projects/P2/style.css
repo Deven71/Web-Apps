@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #d1e3ff;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+.nav h1{
+    color: #0355cc;
+}
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+    font-size: 20px;
+    align-items: center;
+}
+.nav-part2 button{
+    font-size: 20px;
+    background-color: #ff8a1d;
+    color:black;
+    padding: 1vw 2vw;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+}
+.nav i{
+    display: none;
+    align-items: center;
+}
+.container{
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+}
+.container-part1{
+    height: 100%;
+    width: 50%;
+    padding: 5vw 4vw;
+}
+.container-part1 h1{
+    font-size: 50px;
+    margin-bottom: 3vw;
+    color: #0355cc;
+    
+}
+.container-part1 p{
+    font-size: 20px;
+    margin-bottom: 3vw;
+}
+.container-part1 button{
+    font-size: 20px;
+    padding: 1vw 2vw;
+    border: none;
+    background-color: #ff8a1d;
+    color: black;
+    border-radius: 10px;
+}
+.container-part2{
+    height: 100%;
+    width: 50%;
+}
+.container-part2 img{
+  height: 100%;
+  width: 100%;
+  
+   
+}
+@media (max-width:600px) {
+    .nav i{
+        font-size: 40px;
+        font-weight: 600;
+        display: block;
+    }
+    .nav-part2 h4{
+        display: none;
+    }
+    .nav-part2 button{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        height: calc(100% - 100px);
+        
+    }
+    .container-part1{
+        width: 100%;
+        padding: 7vw 6vw;
+    }
+    .container-part2{
+        width: 100%;
+    }
+    .container-part1 h1{
+        margin-bottom: 8vw;
+    }
+    .container-part1 p{
+        margin-bottom: 5vh;
+    }
+    .container-part1 button{
+        padding: 2vh 3vh;
+    }
+}
+    
